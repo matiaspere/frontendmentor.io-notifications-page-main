@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// Component and data
+import Notification from "./components/Notification";
+import { notifications } from "./utilities/notifications";
+// Context
+import AppContext from "./context/AppContext";
+import useNotifications from "./hooks/useNotifications";
 
 function App() {
+  const notificationsUse = useNotifications();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={notificationsUse}>
+      <div className="App">
+        <div className="Container">
+          <div className="Container-header-text">
+            <div className="Container-header-text-left">
+              <h1>Notifications</h1>
+              <div>3</div>
+            </div>
+            <p>Mark all as read</p>
+          </div>
+          <div className="Notifications-container">
+            {notifications.map((i) => (
+              <Notification
+                image={i.image}
+                name={i.name}
+                action={i.action}
+                post={i.post}
+                group={i.group}
+                time={i.time}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </AppContext.Provider>
   );
 }
 
