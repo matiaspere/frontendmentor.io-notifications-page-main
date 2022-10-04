@@ -1,0 +1,41 @@
+.NotificationContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: hsl(211, 68%, 94%);
+    max-width:650px;
+    border-radius: 8px;
+
+}
+.NotificationContainerLeft img{
+    width: 40px;
+    height: 40px;
+}
+.NotificationContainerRight{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.TextName{
+    font-weight: 700;
+}
+.TextAction{
+    font-weight: 500;
+    margin-left: 3px;
+    color: hsl(219, 12%, 42%);
+}
+.TextPost{
+    font-weight: 700;
+    color: hsl(219, 12%, 42%);
+}
+.TextGroup{
+    font-weight: 700;
+    color: hsl(219, 85%, 26%);
+}
+.TextTime{
+    margin-top: 3px;
+    font-weight: 300;
+    color: hsl(219, 14%, 63%);
+}
