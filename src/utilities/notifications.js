@@ -14,6 +14,9 @@ export const notifications = [
         post: 'My first tournament today!',
         group: '',
         time: '1m ago',
+        id: 1,
+        read: false,
+        message: '',
     },
     {   
         image: img2,
@@ -22,6 +25,9 @@ export const notifications = [
         post: '',
         group: '',
         time: '5m ago',
+        id: 2,
+        read: false,
+        message: '',
     },
     {   
         image: img3,
@@ -30,6 +36,9 @@ export const notifications = [
         post: '',
         group: 'Chess Club',
         time: '1 day ago',
+        id: 3,
+        read: false,
+        message: '',
     },
     {   
         image: img4,
@@ -38,6 +47,10 @@ export const notifications = [
         post: '',
         group: '',
         time: '5 days ago',
+        id: 4,
+        read: true,
+        message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        I'm already having lots of fun and improving my game.`,
     },
     {   
         image: img5,
@@ -46,6 +59,9 @@ export const notifications = [
         post: '',
         group: '',
         time: '1 week ago',
+        id: 5,
+        read: true,
+        message: '',
     },
     {   
         image: img6,
@@ -54,6 +70,9 @@ export const notifications = [
         post: '5 end-game strategies to increase your win rate',
         group: '',
         time: '2 weeks ago',
+        id: 6,
+        read: true,
+        message: '',
     },
     {   
         image: img7,
@@ -62,6 +81,10 @@ export const notifications = [
         post: '',
         group: 'Chess Club',
         time: '2 weeks ago',
+        id: 7,
+        read: true,
+        message: '',
     },
     
 ]
+

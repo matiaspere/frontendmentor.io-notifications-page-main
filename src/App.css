@@ -15,6 +15,7 @@
   background-color: white;
   border-radius: 12px;
   place-self: center;
+  max-width: 1440px;
 }
 /* Header text */
 .Container-header-text{
@@ -49,7 +50,11 @@
 .Container-header-text h1{
   font-size: 20px;
 }
-
+/* Hover */
+.allRead:hover{
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
 /* Notifications container */
 .Notifications-container{
   display: flex;

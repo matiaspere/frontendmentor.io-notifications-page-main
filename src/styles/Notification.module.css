@@ -7,7 +7,6 @@
     background-color: hsl(211, 68%, 94%);
     max-width:650px;
     border-radius: 8px;
-
 }
 .NotificationContainerLeft img{
     width: 40px;
@@ -25,17 +24,64 @@
     font-weight: 500;
     margin-left: 3px;
     color: hsl(219, 12%, 42%);
+    margin-left: 5px;
 }
 .TextPost{
     font-weight: 700;
     color: hsl(219, 12%, 42%);
+    margin-left: 5px;
 }
 .TextGroup{
     font-weight: 700;
-    color: hsl(219, 85%, 26%);
+    color: hsl(219, 12%, 42%);
+    margin-left: 5px;
 }
 .TextTime{
     margin-top: 3px;
     font-weight: 300;
     color: hsl(219, 14%, 63%);
+}
+.MainMessage{
+    margin-left: 80px;
+    max-width: 570px;
+}
+.message{
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid hsl(205, 33%, 90%);
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+/* Hovers */
+.TextName:hover, .TextPost:hover, .TextGroup:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    cursor: pointer;
+}
+.message:hover{
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+/* logica */
+.textReaded{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.redCircle{
+    margin-left: 5px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.NotificationContainerRead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: white;
+    max-width:650px;
+    border-radius: 8px;
 }
