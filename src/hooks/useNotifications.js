@@ -38,22 +38,4 @@ const useNotifications = () => {
 
 export default useNotifications;
 
-// let newState = [...state];
-//     newState.forEach(i => {
-//       if (i.id === payload) {
-//         console.log("asd");
-//         if (i.read === false) {
-//           console.log("asd");
-//           setState({
-//             ...newState,
-//             read: true,
-//           });
-//         } else {
-//           console.log("asd");
-//           setState({
-//             ...newState,
-//             read: false,
-//           });
-//         }
-//       }
-//     });
+
